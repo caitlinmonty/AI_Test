@@ -23,11 +23,25 @@ public class DashboardFragment extends Fragment {
         dashboardViewModel =
                 ViewModelProviders.of(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.textView);
+        final TextView textView1 = root.findViewById(R.id.textView6);
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                textView1.setText(s);
+            }
+        });
+        final TextView textView2 = root.findViewById(R.id.textView7);
+        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                textView2.setText(s);
+            }
+        });
+        final TextView textView3 = root.findViewById(R.id.textView8);
+        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                textView3.setText(s);
             }
         });
         return root;

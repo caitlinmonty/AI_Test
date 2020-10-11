@@ -5,4 +5,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="chat_with_ai">Chat with AI</string>
     <string name="speech_bubble">Speech Bubble</string>
+    <string name="game_against_ai">Game Against AI</string>
+    <string name="star">STAR</string>
+    <string name="eye">EYE</string>
+    <string name="image_recognition">Image Recognition</string>
 </resources>
